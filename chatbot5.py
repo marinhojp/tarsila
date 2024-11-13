@@ -93,16 +93,21 @@ class Chatbot:
                             f"O telefone do {nome_museu} é {telefone}.",
                             f"Para falar com o {nome_museu}, ligue para {telefone}.",
                             f"Você pode contatar o {nome_museu} pelo número {telefone}."
+                            f"Ligue: {telefone} para contatar o {nome_museu}"
                         ]
                         site_respostas = [
                             f"O site do {nome_museu} é {site}.",
                             f"Acesse o site do {nome_museu} em {site}.",
                             f"Para mais informações, visite o site: {site}."
+                            f"Opa, aqui está o site do {nome_museu}: {site}"
+                            f"É pra já! O site do {nome_museu} é {site}"
                         ]
                         descricao_respostas = [
                             f"Aqui vai uma descrição do {nome_museu}: {descricao}",
                             f"Sobre o {nome_museu}: {descricao}",
                             f"Descrição do {nome_museu}: {descricao}"
+                            f"Essa é uma breve descrição do {nome_museu}: {descricao}"
+                            f"Aqui está um pouco sobre o {nome_museu}: {descricao}"
                         ]
 
                         if any(sin in user_input_normalized for sin in endereco_sinonimos):
