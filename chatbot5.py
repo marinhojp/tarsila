@@ -60,10 +60,10 @@ class Chatbot:
         user_input_normalized = self.normalize_string(user_input)
 
         # Definir sinônimos para cada tipo de coluna
-        endereco_sinonimos = ["endereco", "logradouro", "localizacao"]
-        telefone_sinonimos = ["telefone", "contato", "numero"]
-        site_sinonimos = ["site", "website", "pagina"]
-        descricao_sinonimos = ["descricao", "informacao", "sobre"]
+        endereco_sinonimos = ["endereco", "logradouro", "localizacao", "local", "rua"]
+        telefone_sinonimos = ["telefone", "contato", "numero","celular"]
+        site_sinonimos = ["site", "website", "pagina","link"]
+        descricao_sinonimos = ["descricao", "informacao", "sobre","história"]
 
         try:
             response = requests.get("https://docs.google.com/spreadsheets/d/e/2PACX-1vQE0Ri65HJxWyZdjjcgzzAz7N6ZxcejCLhPNweL5q5tBBB9-qsams2yLdeNMMu4ETeNIKhDNeTnd4ye/pubhtml")
