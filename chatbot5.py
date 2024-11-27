@@ -32,7 +32,7 @@ class Chatbot:
         self.entry.bind("<Return>", self.process_input)
 
         # Botão de envio
-        self.send_button = ctk.CTkButton(master, text="Enviar", fg_color="green", command=self.process_input)
+        self.send_button = ctk.CTkButton(master, text="Enviar", fg_color="blue", command=self.process_input)
         self.send_button.grid(row=2, column=0, padx=20, pady=10)
 
     def process_input(self, event=None):
